@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import mathjax3 from "markdown-it-mathjax3";
 import footnote from "markdown-it-footnote";
+import { OramaPlugin } from '@orama/plugin-vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -25,27 +26,14 @@ export default defineConfig({
       light: "github-light",
       dark: "github-dark"}
   },
+  extends: {
+    vite: {
+      plugins: [OramaPlugin()],
+    },
+  },
   themeConfig: {
     outline: 'deep',
     logo: { src: '/logo.png', width: 24, height: 24},
-    search: {
-      provider: 'local',
-      options: {
-        detailedView: true,
-        miniSearch: {
-          searchOptions: {
-            fuzzy: 0.1,
-            prefix: true,
-            boost: {
-              title: 4,
-              text: 2,
-              titles: 1 
-            },
-            combineWith: 'AND'
-          }
-        }
-      }
-    },
     nav: [
 { text: 'Home', link: '/index' },
 { text: 'Installation', link: '/install' },
