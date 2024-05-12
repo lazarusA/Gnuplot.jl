@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+DocumenterVitepress = "4710194d-e776-4893-9690-8d956a29c365"
+Gnuplot = "dc211083-a33a-5b79-959f-2ff34033469d"
+RDatasets = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
+TestImages = "5e47fb64-e119-507b-a336-dd2b206d9990"

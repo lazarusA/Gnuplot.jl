@@ -49,7 +49,6 @@ iris = dataset("datasets", "iris")
 @gp plotdf(iris, :SepalLength, :SepalWidth, group=:Species)
 saveas("recipes001"); nothing # hide
 ```
-![](assets/recipes001.png)
 
 
 ## Corner plot recipe
@@ -90,7 +89,6 @@ iris = dataset("datasets", "iris")
 @gp cornerplot(iris)
 saveas("recipes001_1"); nothing # hide
 ```
-![](assets/recipes001_1.png)
 
 
 ## Histogram recipes

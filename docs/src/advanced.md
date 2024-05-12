@@ -394,7 +394,6 @@ end
 Gnuplot.save("assets/lorenz.webp", term="webp enhanced size 600,400 animate delay 0.1")
 nothing # hide
 ```
-![](assets/lorenz.webp)
 
 
 

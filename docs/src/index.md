@@ -77,6 +77,6 @@ In this documentation:
 
 
 ## Table of Contents
-```@contents
+<!-- ```@contents
 Pages = ["index.md", "install.md", "basic.md", "advanced.md", "options.md", "style.md", "terminals.md", "recipes.md", "examples.md", "api.md"]
-```
+``` -->
